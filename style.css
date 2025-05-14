@@ -28,4 +28,24 @@ footer{
 }
 .grid-item img{
     width: 100%;
+    display: block;
+}
+.grid-item :hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.grid-item-large{
+    grid-column: span 2;
+}
+@media (max-width: 1024px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 720px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
