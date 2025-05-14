@@ -36,6 +36,17 @@ footer{
 }
 .grid-item-large{
     grid-column: span 2;
+    border: 5px solid #ddd;
+    display: block;
+    
+}
+.grid-item-large img{
+    width: 100%;
+    height: auto;
+}
+.grid-item-large :hover{
+    transform: scale(1.05);
+    transition: tranform 0.3s ease;
 }
 @media (max-width: 1024px){
     .grid-container{
